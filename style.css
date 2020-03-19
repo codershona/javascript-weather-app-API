@@ -12,5 +12,15 @@ body {
 
 .input {
   text-align: center;
+
+}
+
+input[type="text"]{
+  height: 50px;
+  width: 600px;
+  background: #e7e7e7;
+  font-family: "Nunito",sans-serif;
+  font-weight: bold;
+  font-size: 20px;
   
 }
