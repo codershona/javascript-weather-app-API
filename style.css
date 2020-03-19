@@ -12,6 +12,7 @@ body {
 
 .input {
   text-align: center;
+  margin: 100px 0;
 
 }
 
@@ -22,5 +23,7 @@ input[type="text"]{
   font-family: "Nunito",sans-serif;
   font-weight: bold;
   font-size: 20px;
-  
+  border: none;
+  border-radius: 2px;
+
 }
