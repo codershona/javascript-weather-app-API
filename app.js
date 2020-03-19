@@ -16,7 +16,23 @@ var temp = document.querySelector('.temp');
 button.addEventListener('click', function() {
   fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=478cc3c9e7cd7db831d6f004db3d70f7')
      .then(response => response.json())
-     .then(data => console.log(data))
+     // .then(data => console.log(data))
+      .then(data => {
+        var nameValue = data['name'];
+        var tempValue = data['main']['temp'];
+        var descValue = data['weather'][0]['description'];
 
-     .catch(err => alert("Wrong city name, please enter correct city name!"))
+        name.innerHTML = nameValue;
+        temp.innerHTML = tempValue;
+        desc.innerHTML = descValue;
+      })
+
+
+  // city name method :
+  // name.innerHTML =
+  // nameValue =
+.catch(err => alert("Wrong city name!"))
 })
+
+
+// second method :
